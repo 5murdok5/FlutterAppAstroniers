@@ -16,6 +16,7 @@ class CardItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return CardContainer(
       margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(9),
       showShadow: true,
       colorShadow: const Color.fromARGB(15, 0, 0, 0),
       child: Stack(
@@ -47,6 +48,7 @@ class CardItem extends StatelessWidget {
         child: TextApp(
           text: item.title,
           size: 20,
+          fontWeight: FontWeight.w700,
         ),
       ),
     );

@@ -18,7 +18,7 @@ class PageGetCtrl extends GetxController {
   ];
   final List<Widget> pagesHome = [
     PageHome(),
-    const PageMatriz(),
+    PageMatriz(),
   ];
 
   // --- values states ----

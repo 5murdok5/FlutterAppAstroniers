@@ -14,6 +14,7 @@ class PageHome extends StatelessWidget {
     return Scaffold(
       backgroundColor: colorBack,
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
         child: Column(
           children: [
             appbarHeader(),

@@ -11,11 +11,13 @@ class ItemsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: paddingHzApp),
-      child: Column(
-        children: List.generate(
-          _hmCtrl.cards.length,
-          (index) => CardItem(
-            item: _hmCtrl.cards[index],
+      child: Obx(
+        () => Column(
+          children: List.generate(
+            _hmCtrl.listItems.length,
+            (index) => CardItem(
+              item: _hmCtrl.listItems[index],
+            ),
           ),
         ),
       ),

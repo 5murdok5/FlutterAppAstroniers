@@ -31,7 +31,7 @@ Widget titles(String text) {
   return TextApp(
     text: text,
     size: 27,
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.w800,
   );
 }
 
@@ -39,6 +39,6 @@ Widget subTitles(String text) {
   return TextApp(
     text: text,
     size: 21,
-    fontWeight: FontWeight.w800,
+    fontWeight: FontWeight.w700,
   );
 }
